@@ -8,7 +8,7 @@ Criamos o subscritor em https://github.com/akihirohh/gmr_intro para o tópico */
 
 ## Conhecendo parâmetros em ROS 
 
-Os parâmetros ROS possibilitam a troca de valor de variáveis dos nós sem a necessidade de recompilação. Eles podem ser acessados do servidor de parâmetros, que é executado junto de rosmaster. Através da linha de comando `$ rosparam list`, podemos ver alguns parâmetros disponíveis, por exemplo, */axle_track*, */gear_ratio* e */wheel_radius*. Podemos obter o seu valor com `rosparam get <param>`, por exemplo `rosparam get /axle_track`. Mas o que nos interessa agora é acessá-los dentro do nó. Para isso, podemos utilizar dois métodos: ros::NodeHandle::getParam() ou ros::param::get().
+Os parâmetros ROS possibilitam a troca de valor de variáveis dos nós sem a necessidade de recompilação. Eles podem ser acessados do servidor de parâmetros, que é executado junto de rosmaster. Através da linha de comando `$ rosparam list`, podemos ver alguns parâmetros disponíveis, por exemplo, */axle_track*, */gear_ratio* e */wheel_radius*. Note que os parâmetros continuarão disponíveis enquanto o master estiver ativo (i.e. um `roscore` rodando). Podemos obter o seu valor com `rosparam get <param>`, por exemplo `rosparam get /axle_track`. Mas o que nos interessa agora é acessá-los dentro do nó. Para isso, podemos utilizar dois métodos: ros::NodeHandle::getParam() ou ros::param::get().
 
 Atualizando nosso subscritor em ~ros_ws/src/sub_rpm/src/sub_rpm_node.cpp:
 
