@@ -2,7 +2,7 @@
 
 *Observação: não é necessário clonar este repositório.*
 
-Criamos o subscritor em https://github.com/akihirohh/gmr_intro para o tópico */left_rpm*. Porém, temos o */right_rpm* também. O que precisamos para conseguir a informação desse último sem precisar escrever outro nó? Neste tutorial, veremos um pouco sobre parâmetros e roslaunch.
+Criamos o [subscritor](https://bitbucket.org/grupomecatronica/gmr_intro) para o tópico */left_rpm*. Porém, temos o */right_rpm* também. O que precisamos para conseguir a informação desse último sem precisar escrever outro nó? Neste tutorial, veremos um pouco sobre parâmetros e roslaunch.
 
 *Preparação:* deixe rodando `roscore` e `rosrun gmr_intro gmr_intro_node`.
 
