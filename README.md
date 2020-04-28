@@ -196,3 +196,6 @@ ros::Publisher pub_left_rpm = nh.advertise<std_msgs::Float32> ("/left_rpm",1);
 Neste caso, os dois robôs estão publicando simultaneamente em /left_rpm e /right_rpm, o que exigiria mudança em gmr_intro_node.cpp para tornar os nomes locais. 
 
 Com este tutorial, temos duas ferramentas fundamentais para acelerar o desenvolvimento da parte de software de um robô móvel: os parâmetros e os arquivos launch.
+
+
+Contato: Akihiro (akihirohh@gmail.com)
